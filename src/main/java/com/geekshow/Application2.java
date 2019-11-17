@@ -3,16 +3,19 @@ package com.geekshow;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
+import org.springframework.boot.web.servlet.ServletListenerRegistrationBean;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
 
 import com.geekshow.filter.SecondFilter;
+import com.geekshow.listener.SecondListener;
 import com.geekshow.servlet.SecondServlet;
 
 /**
  * SpringBoot 启动类
  * SpringBoot整合Servlet方式二
  * SpringBoot整合Filter方式二
+ * SpringBoot整合Listener方式二
  * @author Administrator
  *
  */
@@ -38,6 +41,15 @@ public class Application2 {
 		FilterRegistrationBean bean = new FilterRegistrationBean(new SecondFilter());
 		//bean.addUrlPatterns(new String[]{"*.do","*.jsp"});
 		bean.addUrlPatterns("/second");
+		return bean;
+	}
+	
+	/**
+	 * 注册listener
+	 */
+	@Bean
+	public ServletListenerRegistrationBean<SecondListener> getServletListenerRegistrationBean(){
+		ServletListenerRegistrationBean<SecondListener> bean= new ServletListenerRegistrationBean<SecondListener>(new SecondListener());
 		return bean;
 	}
 }

@@ -7,6 +7,8 @@ import org.springframework.boot.web.servlet.ServletComponentScan;
 /**
  * SpringBoot 启动类
  * SpringBoot整合Servlet方式一
+ * SpringBoot整合Filter方式一
+ * SpringBoot整合Listener方式一
  * @author Administrator
  *
  */
