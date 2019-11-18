@@ -40,5 +40,22 @@
     <b>字符串转大小写。</b>
     <span th:text="${#strings.toUpperCase(msg)}"></span>
     <span th:text="${#strings.toLowerCase(msg)}"></span>
+    <hr/>
+    <b>格式化日期，默认的以浏览器默认语言为格式化标准</b>
+    <span th:text="${#dates.format(key)}"></span>
+    <hr/>
+    <b>按照自定义的格式做日期转换</b>
+    <span th:text="${#dates.format(key,'yyy/MM/dd')}"></span>
+    <hr/>
+    <b>
+        year：取年
+        Month：取月
+        Day：取日
+    </b>
+    <span th:text="${#dates.year(key)}"></span>
+    <hr/>
+    <span th:text="${#dates.month(key)}"></span>
+    <hr/>
+    <span th:text="${#dates.day(key)}"></span>
 </body>
 </html>
