@@ -16,4 +16,11 @@ public class DemoController {
 		model.addAttribute("msg", "Thymeleaf 第一个案例");
 		return "index";
 	}
+
+	@RequestMapping("/show2")
+	public String showInfo2(Model model){
+		model.addAttribute("sex", "女");
+		model.addAttribute("id","1");
+		return "index2";
+	}
 }
