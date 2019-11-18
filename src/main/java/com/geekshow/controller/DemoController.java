@@ -5,6 +5,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -49,5 +51,13 @@ public class DemoController {
 		map.put("u3", new Users(3,"王五",24));
 		model.addAttribute("map", map);
 		return "index4";
+	}
+	
+	@RequestMapping("/show5")
+	public String showInfo5(HttpServletRequest request,Model model){
+		request.setAttribute("req", "HttpServletRequest");
+		request.getSession().setAttribute("sess", "HttpSession");
+		request.getSession().getServletContext().setAttribute("app", "Application");
+		return "index5";
 	}
 }
