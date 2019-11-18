@@ -8,5 +8,37 @@
 	<span th:text="Hello"></span>
 	<hr/>
 	<span th:text="${msg}"></span>
+    <hr />
+    <b>可以将一个值放入到input 标签的value 中</b>
+    <input type = "text" name = "username" th:value = "${msg}">
+    <hr/>
+    <b>判断字符串是否为空，如果为空返回true，否则返回false</b>
+    <span th:text="${#strings.isEmpty(msg)}"></span>
+    <hr/>
+    <b>判断字符串是否包含指定的子串，如果包含返回true，否则返回false</b>
+    <span th:text="${#strings.contains(msg,'9')}"></span>
+    <span th:text="${#strings.contains(msg,'T')}"></span>
+    <hr/>
+    <b>判断当前字符串是否以子串开头，如果是返回true，否则返回false</b>
+    <span th:text="${#strings.startsWith(msg,'a')}"></span>
+    <span th:text="${#strings.startsWith(msg,'T')}"></span>
+    <hr/>
+    <b>判断当前字符串是否以子串结尾，如果是返回true，否则返回false</b>
+    <span th:text="${#strings.endsWith(msg,'a')}"></span>
+    <span th:text="${#strings.endsWith(msg,'案例')}"></span>
+    <hr/>
+    <b>返回字符串的长度</b>
+    <span th:text="${#strings.length(msg)}"></span>
+    <hr/>
+    <b>查找子串的位置，并返回该子串的下标，如果没找到则返回-1</b>
+    <span th:text="${#strings.indexOf(msg,'h')}"></span>
+    <hr/>
+    <b>截取子串，用法与jdk中String 类下SubString 方法相同</b>
+    <span th:text="${#strings.substring(msg,13)}"></span>
+    <span th:text="${#strings.substring(msg,13,14)}"></span>
+    <hr/>
+    <b>字符串转大小写。</b>
+    <span th:text="${#strings.toUpperCase(msg)}"></span>
+    <span th:text="${#strings.toLowerCase(msg)}"></span>
 </body>
 </html>
