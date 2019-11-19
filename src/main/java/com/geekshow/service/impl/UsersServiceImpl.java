@@ -8,6 +8,8 @@ import com.geekshow.mapper.UsersMapper;
 import com.geekshow.pojo.Users;
 import com.geekshow.service.UsersService;
 
+import java.util.List;
+
 
 @Service
 @Transactional
@@ -19,5 +21,10 @@ public class UsersServiceImpl implements UsersService {
 	@Override
 	public void addUser(Users users) {
 		this.usersMapper.insertUser(users);
+	}
+
+	@Override
+	public List<Users> findUserAll() {
+		return this.usersMapper.selectUsersAll();
 	}
 }

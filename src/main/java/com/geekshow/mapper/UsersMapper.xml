@@ -6,4 +6,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<insert id="insertUser" parameterType="users">
 		insert into users(username,userage) values(#{username},#{userage})
 	</insert>
+	<select id="selectUsersAll" resultType="users">
+		select userid,username,userage from users
+	</select>
 </mapper>
