@@ -44,4 +44,23 @@ public class UsersController {
 		model.addAttribute("list", list);
 		return "showUsers";
 	}
+	
+	/**
+	 * 根据用户id查询用户
+	 */
+	@RequestMapping("/findUserById")
+	public String findUserById(Integer id,Model model){
+		Users user = this.usersService.findUserById(id);
+		model.addAttribute("user", user);
+		return "updateUser";
+	}
+	
+	/**
+	 * 更新用户
+	 */
+	@RequestMapping("/editUser")
+	public String editUser(Users users){
+		this.usersService.updateUser(users);
+		return "ok";
+	}
 }

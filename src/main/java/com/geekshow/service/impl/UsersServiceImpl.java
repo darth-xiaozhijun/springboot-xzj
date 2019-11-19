@@ -27,4 +27,14 @@ public class UsersServiceImpl implements UsersService {
 	public List<Users> findUserAll() {
 		return this.usersMapper.selectUsersAll();
 	}
+	
+	@Override
+	public Users findUserById(Integer id) {
+		return this.usersMapper.selectUsersById(id);
+	}
+	
+	@Override
+	public void updateUser(Users users) {
+		this.usersMapper.updateUser(users);
+	}
 }
