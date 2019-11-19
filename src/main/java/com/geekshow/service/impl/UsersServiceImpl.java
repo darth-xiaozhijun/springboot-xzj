@@ -37,4 +37,9 @@ public class UsersServiceImpl implements UsersService {
 	public void updateUser(Users users) {
 		this.usersMapper.updateUser(users);
 	}
+	
+	@Override
+	public void deleteUserById(Integer id) {
+		this.usersMapper.deleteUserById(id);
+	}
 }

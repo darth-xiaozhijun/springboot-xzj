@@ -63,4 +63,14 @@ public class UsersController {
 		this.usersService.updateUser(users);
 		return "ok";
 	}
+	
+	/**
+	 * 删除用户
+	 */
+	@RequestMapping("/delUser")
+	public String delUser(Integer id){
+		this.usersService.deleteUserById(id);
+		return "redirect:/users/findUserAll";
+	}
+
 }

@@ -19,4 +19,8 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 	<update id="updateUser" parameterType="users">
 		update users set username=#{username} ,userage=#{userage} where userid=#{userid}
 	</update>
+	
+	<delete id="deleteUserById">
+		delete from users where userid = #{userid}
+	</delete>
 </mapper>
