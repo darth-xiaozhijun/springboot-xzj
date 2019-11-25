@@ -36,6 +36,11 @@ public class UserController {
 		return "userList";
 	}
 	
+	@RequestMapping("/addUser")
+	public String showPage(){
+		return "add";
+	}
+	
 	/**
 	 * 完成用户添加
 	 *@Valid 开启对Users对象的数据校验
