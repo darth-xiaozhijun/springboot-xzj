@@ -1,16 +1,28 @@
 package com.geekshow.pojo;
 
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
+
+import org.hibernate.validator.constraints.Email;
+import org.hibernate.validator.constraints.Length;
 import org.hibernate.validator.constraints.NotBlank;
+import org.hibernate.validator.constraints.NotEmpty;
 
 public class User {
 
-	@NotBlank //非空校验
+	@NotBlank(message="用户名不能为空") //非空校验
+	@Length(min=2,max=6,message="最小长度为2位，最大长度为6位")
 	private String name;
 	
-	@NotBlank //密码非空校验
+	@NotEmpty
 	private String password;
 	
+	@Min(value = 1)
+	@Max(value = 150)
 	private Integer age;
+	
+	@Email
+	private String email;
 
 	public String getName() {
 		return name;
@@ -36,9 +48,17 @@ public class User {
 		this.age = age;
 	}
 
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
 	@Override
 	public String toString() {
-		return "User [name=" + name + ", password=" + password + ", age=" + age + "]";
+		return "User [name=" + name + ", password=" + password + ", age=" + age + ", email=" + email + "]";
 	}
-	
+
 }

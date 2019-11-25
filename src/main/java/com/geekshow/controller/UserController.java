@@ -8,6 +8,7 @@ import javax.validation.Valid;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.geekshow.pojo.User;
@@ -36,8 +37,12 @@ public class UserController {
 		return "userList";
 	}
 	
+	/*
+	 * 如果想为传递的对象更改名称，可以使用@ModelAttribute("aa")这表示当前传递的对象的key为aa。
+	 * 那么我们在页面中获取该对象的key也需要修改为aa
+	 */
 	@RequestMapping("/addUser")
-	public String showPage(){
+	public String showPage(@ModelAttribute("aa") User user){
 		return "add";
 	}
 	
@@ -47,7 +52,7 @@ public class UserController {
 	 *BindingResult:封装了校验的结果
 	 */
 	@RequestMapping("/save")
-	public String saveUser(@Valid User user,BindingResult result){
+	public String saveUser(@ModelAttribute("aa") @Valid User user,BindingResult result){
 		if(result.hasErrors()){
 			return "add";
 		}
