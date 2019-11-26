@@ -2,16 +2,19 @@ package com.geekshow.test;
 
 import java.util.List;
 
+import javax.transaction.Transactional;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.annotation.Rollback;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.geekshow.Application;
 import com.geekshow.dao.PeoplesRepository;
 import com.geekshow.dao.PeoplesRepositoryByName;
-import com.geekshow.pojo.Peoples;
+import com.geekshow.dao.PeoplesRepositoryQueryAnnotation;
 import com.geekshow.pojo.Peoples;
 
 /**
@@ -28,6 +31,9 @@ public class PeoplesRepositoryTest {
 	
 	@Autowired
 	private PeoplesRepositoryByName peoplesRepositoryByName;
+	
+	@Autowired
+	private PeoplesRepositoryQueryAnnotation peoplesRepositoryQueryAnnotation;
 	
 	@Test
 	public void testSave(){
@@ -70,5 +76,37 @@ public class PeoplesRepositoryTest {
 		for (Peoples peoples : list) {
 			System.out.println(peoples);
 		}
+	}
+	
+	/**
+	 * Repository--@Query测试
+	 */
+	@Test
+	public void testQueryByNameUseHQL() {
+		List<Peoples> list = this.peoplesRepositoryQueryAnnotation.queryByNameUseHQL("文天祥");
+		for (Peoples peoples : list) {
+			System.out.println(peoples);
+		}
+	}
+
+	/**
+	 * Repository--@Query测试
+	 */
+	@Test
+	public void testQueryByNameUseSQL() {
+		List<Peoples> list = this.peoplesRepositoryQueryAnnotation.queryByNameUseSQL("文天祥");
+		for (Peoples peoples : list) {
+			System.out.println(peoples);
+		}
+	}
+
+	/**
+	 * Repository--@Query测试
+	 */
+	@Test
+	@Transactional //@Transactional与@Test 一起使用时 事务是自动回滚的。
+	@Rollback(false) //取消自动回滚
+	public void testUpdatePeoplesNameById() {
+		this.peoplesRepositoryQueryAnnotation.updatePeoplesNameByIdUseHQL("欧阳修", 1);
 	}
 }
