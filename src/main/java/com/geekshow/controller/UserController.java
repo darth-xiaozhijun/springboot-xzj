@@ -75,7 +75,7 @@ public class UserController {
 	
 	@RequestMapping("/loader")
 	public String showPage(){
-		System.out.println("ShowPage......init");
+		System.out.println("ShowPage......");
 		return "loader";
 	}
 }
