@@ -229,4 +229,19 @@ public class PeoplesRepositoryTest {
 			System.out.println(peoples);
 		}
 	}
+	
+	/**
+	 * JapRepository   排序测试
+	 */
+	@Test
+	public void testJpaRepositorySort() {
+		//Order 定义排序规则
+		Order order = new Order(Direction.DESC,"id");
+		//Sort对象封装了排序规则
+		Sort sort = new Sort(order);
+		List<Peoples> list = this.peoplesRepository.findAll(sort);
+		for (Peoples peoples : list) {
+			System.out.println(peoples);
+		}
+	}
 }
