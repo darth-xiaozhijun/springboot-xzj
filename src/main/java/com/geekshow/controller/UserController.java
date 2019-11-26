@@ -72,4 +72,10 @@ public class UserController {
 		int a = 100/0;
 		return "index";
 	}
+	
+	@RequestMapping("/loader")
+	public String showPage(){
+		System.out.println("ShowPage......init");
+		return "loader";
+	}
 }
