@@ -322,4 +322,40 @@ public class PeoplesRepositoryTest {
 			System.out.println(peoples);
 		}
 	}
+	
+	/**
+	 * JpaSpecificationExecutor   多条件测试第二种写法
+	 */
+	@Test
+	public void testJpaSpecificationExecutor3() {
+		
+		/**
+		 * Specification<Users>:用于封装查询条件
+		 */
+		Specification<Peoples> spec = new Specification<Peoples>() {
+			
+			//Predicate:封装了 单个的查询条件
+			/**
+			 * Root<Users> root:查询对象的属性的封装。
+			 * CriteriaQuery<?> query：封装了我们要执行的查询中的各个部分的信息，select  from order by
+			 * CriteriaBuilder cb:查询条件的构造器。定义不同的查询条件
+			 */
+			@Override
+			public Predicate toPredicate(Root<Peoples> root, CriteriaQuery<?> query, CriteriaBuilder cb) {
+				// where name = '张三三' and age = 20
+				/*List<Predicate> list = new ArrayList<>();
+				list.add(cb.equal(root.get("name"),"张三三"));
+				list.add(cb.equal(root.get("age"),20));
+				Predicate[] arr = new Predicate[list.size()];*/
+				//(name = '张三' and age = 20) or id = 2
+				return cb.or(cb.and(cb.equal(root.get("name"),"张三三"),cb.equal(root.get("age"),20)),cb.equal(root.get("id"), 2));
+			}
+		};
+		
+		Sort sort = new Sort(new Order(Direction.DESC,"id"));
+		List<Peoples> list = this.peoplesRepositorySpecification.findAll(spec,sort);
+		for (Peoples peoples : list) {
+			System.out.println(peoples);
+		}
+	}
 }
