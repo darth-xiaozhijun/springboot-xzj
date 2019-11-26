@@ -14,6 +14,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import com.geekshow.Application;
 import com.geekshow.dao.PeoplesRepository;
 import com.geekshow.dao.PeoplesRepositoryByName;
+import com.geekshow.dao.PeoplesRepositoryCrudRepository;
 import com.geekshow.dao.PeoplesRepositoryQueryAnnotation;
 import com.geekshow.pojo.Peoples;
 
@@ -34,6 +35,9 @@ public class PeoplesRepositoryTest {
 	
 	@Autowired
 	private PeoplesRepositoryQueryAnnotation peoplesRepositoryQueryAnnotation;
+	
+	@Autowired
+	private PeoplesRepositoryCrudRepository peoplesRepositoryCrudRepository;
 	
 	@Test
 	public void testSave(){
@@ -108,5 +112,59 @@ public class PeoplesRepositoryTest {
 	@Rollback(false) //取消自动回滚
 	public void testUpdatePeoplesNameById() {
 		this.peoplesRepositoryQueryAnnotation.updatePeoplesNameByIdUseHQL("欧阳修", 1);
+	}
+	
+	/**
+	 * CrudRepository测试
+	 */
+	@Test
+	public void testCrudRepositorySave() {
+		Peoples peoples = new Peoples();
+		peoples.setAddress("天津");
+		peoples.setAge(12);
+		peoples.setName("哪吒");
+		this.peoplesRepositoryCrudRepository.save(peoples);
+	}
+	
+	/**
+	 * CrudRepository测试
+	 */
+	@Test
+	public void testCrudRepositoryUpdate() {
+		Peoples peoples = new Peoples();
+		peoples.setId(4);
+		peoples.setAddress("呼伦贝尔");
+		peoples.setAge(40);
+		peoples.setName("成吉思汗");
+		this.peoplesRepositoryCrudRepository.save(peoples);
+	}
+	
+	/**
+	 * CrudRepository测试
+	 */
+	@Test
+	public void testCrudRepositoryFindOne() {
+		Peoples peoples = this.peoplesRepositoryCrudRepository.findOne(4);
+		System.out.println(peoples);
+	}
+	
+	/**
+	 * CrudRepository测试
+	 */
+	@Test
+	public void testCrudRepositoryFindAll() {
+		List<Peoples> list  =  (List<Peoples>)this.peoplesRepositoryCrudRepository.findAll();
+		for (Peoples peoples : list) {
+			System.out.println(peoples);
+		}
+	}
+	
+	/**
+	 * CrudRepository测试
+	 */
+	@Test
+	public void testCrudRepositoryDeleteById() {
+		this.peoplesRepositoryCrudRepository.delete(4);
+		
 	}
 }
