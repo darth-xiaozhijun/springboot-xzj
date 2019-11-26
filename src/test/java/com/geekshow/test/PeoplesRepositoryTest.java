@@ -1,7 +1,12 @@
 package com.geekshow.test;
 
+import java.util.ArrayList;
 import java.util.List;
 
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Predicate;
+import javax.persistence.criteria.Root;
 import javax.transaction.Transactional;
 
 import org.junit.Test;
@@ -14,6 +19,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.domain.Sort.Direction;
 import org.springframework.data.domain.Sort.Order;
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.test.annotation.Rollback;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
@@ -23,6 +29,7 @@ import com.geekshow.dao.PeoplesRepositoryByName;
 import com.geekshow.dao.PeoplesRepositoryCrudRepository;
 import com.geekshow.dao.PeoplesRepositoryPagingAndSorting;
 import com.geekshow.dao.PeoplesRepositoryQueryAnnotation;
+import com.geekshow.dao.PeoplesRepositorySpecification;
 import com.geekshow.pojo.Peoples;
 import com.geekshow.pojo.Users;
 
@@ -49,6 +56,9 @@ public class PeoplesRepositoryTest {
 	
 	@Autowired
 	private PeoplesRepositoryPagingAndSorting peoplesRepositoryPagingAndSorting;
+	
+	@Autowired
+	private PeoplesRepositorySpecification peoplesRepositorySpecification;
 	
 	@Test
 	public void testSave(){
@@ -240,6 +250,74 @@ public class PeoplesRepositoryTest {
 		//Sort对象封装了排序规则
 		Sort sort = new Sort(order);
 		List<Peoples> list = this.peoplesRepository.findAll(sort);
+		for (Peoples peoples : list) {
+			System.out.println(peoples);
+		}
+	}
+	
+	/**
+	 * JpaSpecificationExecutor   单条件测试
+	 */
+	@Test
+	public void testJpaSpecificationExecutor1() {
+		
+		/**
+		 * Specification<Users>:用于封装查询条件
+		 */
+		Specification<Peoples> spec = new Specification<Peoples>() {
+			
+			//Predicate:封装了 单个的查询条件
+			/**
+			 * Root<Users> root:查询对象的属性的封装。
+			 * CriteriaQuery<?> query：封装了我们要执行的查询中的各个部分的信息，select  from order by
+			 * CriteriaBuilder cb:查询条件的构造器。定义不同的查询条件
+			 */
+			@Override
+			public Predicate toPredicate(Root<Peoples> root, CriteriaQuery<?> query, CriteriaBuilder cb) {
+				// where name = '张三三'
+				/**
+				 * 参数一：查询的条件属性
+				 * 参数二：条件的值
+				 */
+				Predicate pre = cb.equal(root.get("name"), "张三三");
+				return pre;
+			}
+		};
+		List<Peoples> list = this.peoplesRepositorySpecification.findAll(spec);
+		for (Peoples peoples : list) {
+			System.out.println(peoples);
+		}
+	}
+	
+	
+	/**
+	 * JpaSpecificationExecutor   多条件测试
+	 */
+	@Test
+	public void testJpaSpecificationExecutor2() {
+		
+		/**
+		 * Specification<Users>:用于封装查询条件
+		 */
+		Specification<Peoples> spec = new Specification<Peoples>() {
+			
+			//Predicate:封装了 单个的查询条件
+			/**
+			 * Root<Users> root:查询对象的属性的封装。
+			 * CriteriaQuery<?> query：封装了我们要执行的查询中的各个部分的信息，select  from order by
+			 * CriteriaBuilder cb:查询条件的构造器。定义不同的查询条件
+			 */
+			@Override
+			public Predicate toPredicate(Root<Peoples> root, CriteriaQuery<?> query, CriteriaBuilder cb) {
+				// where name = '张三三' and age = 20
+				List<Predicate> list = new ArrayList<>();
+				list.add(cb.equal(root.get("name"),"张三三"));
+				list.add(cb.equal(root.get("age"),20));
+				Predicate[] arr = new Predicate[list.size()];
+				return cb.and(list.toArray(arr));
+			}
+		};
+		List<Peoples> list = this.peoplesRepositorySpecification.findAll(spec);
 		for (Peoples peoples : list) {
 			System.out.println(peoples);
 		}
