@@ -10,7 +10,6 @@ import com.geekshow.Application;
 import com.geekshow.dao.PeopleRepository;
 import com.geekshow.pojo.People;
 import com.geekshow.pojo.Roles;
-import com.geekshow.pojo.Users;
 
 /**
  * 一对多关联关系测试
