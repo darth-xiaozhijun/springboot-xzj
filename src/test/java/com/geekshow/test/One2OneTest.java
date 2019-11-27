@@ -13,7 +13,7 @@ import com.geekshow.pojo.Card;
 import com.geekshow.pojo.Peoples;
 
 /**
- * 一对多关联关系测试
+ * 一对一关联关系测试
  * @author xiaozhijun
  *
  */
