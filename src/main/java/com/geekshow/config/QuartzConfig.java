@@ -62,11 +62,11 @@ public class QuartzConfig {
 	 * 3.创建Scheduler对象
 	 */
 	@Bean
-	public SchedulerFactoryBean schedulerFactoryBean(CronTriggerFactoryBean cronTriggerFactoryBean){
+	public SchedulerFactoryBean schedulerFactoryBean(CronTriggerFactoryBean cronTriggerFactoryBean,MyAdaptableJobFactory myAdaptableJobFactory){
 		SchedulerFactoryBean factory = new SchedulerFactoryBean();
 		//关联trigger
 		factory.setTriggers(cronTriggerFactoryBean.getObject());
-		
+		factory.setJobFactory(myAdaptableJobFactory);
 		return factory;
 	}
 }
