@@ -3,6 +3,7 @@ package com.geekshow.service.impl;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -19,6 +20,7 @@ public class PeoplesServiceImpl implements PeoplesService {
 	private PeoplesRepository peoplesRepository;
 
 	@Override
+	@Cacheable(value="peoples")
 	public List<Peoples> findPeoplesAll() {
 		return peoplesRepository.findAll();
 	}
@@ -31,11 +33,14 @@ public class PeoplesServiceImpl implements PeoplesService {
 	}
 
 	@Override
+	@Cacheable(value="peoples",key="#pageable.pageSize")
 	public Page<Peoples> findPeoplesByPage(Pageable pageable) {
 		return peoplesRepository.findAll(pageable);
 	}
 
 	@Override
+	//@CacheEvict(value="users",allEntries=true) 清除缓存中以users缓存策略缓存的对象
+	@CacheEvict(value="peoples",allEntries=true)
 	public void savePeoples(Peoples peoples) {
 		peoplesRepository.save(peoples);
 	}
