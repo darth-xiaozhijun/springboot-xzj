@@ -17,7 +17,7 @@ import org.springframework.cache.annotation.EnableCaching;
 @SpringBootApplication
 @ServletComponentScan //在springBoot启动时会扫描@WebServlet，并将该类实例化
 @MapperScan("com.geekshow.mapper") //@MapperScan 用户扫描MyBatis的Mapper接口
-@EnableCaching
+//@EnableCaching
 public class Application {
 
 	public static void main(String[] args) {
