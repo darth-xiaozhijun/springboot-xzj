@@ -2,11 +2,14 @@ package com.geekshow.pojo;
 
 import java.io.Serializable;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -31,6 +34,11 @@ public class Peoples implements Serializable {
 	
 	@Column(name="address")
 	private String address;
+	
+	@OneToOne(cascade=CascadeType.PERSIST)
+	//@JoinColumn：就是维护一个外键
+	@JoinColumn(name="card_id")
+	private Card card;
 
 	public Integer getId() {
 		return id;
@@ -62,6 +70,14 @@ public class Peoples implements Serializable {
 
 	public void setAddress(String address) {
 		this.address = address;
+	}
+	
+	public Card getCard() {
+		return card;
+	}
+
+	public void setCard(Card card) {
+		this.card = card;
 	}
 
 	@Override

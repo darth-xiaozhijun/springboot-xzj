@@ -31,7 +31,6 @@ import com.geekshow.dao.PeoplesRepositoryPagingAndSorting;
 import com.geekshow.dao.PeoplesRepositoryQueryAnnotation;
 import com.geekshow.dao.PeoplesRepositorySpecification;
 import com.geekshow.pojo.Peoples;
-import com.geekshow.pojo.Users;
 
 /**
  * 测试类
