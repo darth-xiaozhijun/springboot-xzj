@@ -26,7 +26,7 @@ public class RedisTest {
 	 */
 	@Test
 	public void testSet(){
-		this.redisTemplate.opsForValue().set("redisTemp", "极客萧公众号");
+		this.redisTemplate.opsForValue().set("redis", "极客萧公众号");
 	}
 	
 	/**
@@ -34,7 +34,7 @@ public class RedisTest {
 	 */
 	@Test
 	public void testGet(){
-		String value = (String)this.redisTemplate.opsForValue().get("redisTemp");
+		String value = (String)this.redisTemplate.opsForValue().get("redis");
 		System.out.println(value);
 	}
 }

@@ -1,5 +1,6 @@
 package com.geekshow.config;
 
+import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
@@ -18,17 +19,23 @@ public class RedisConfig {
 
 	/**
 	 * 1.创建JedisPoolConfig对象。在该对象中完成一些链接池配置
+	 * @ConfigurationProperties:会将前缀相同的内容创建一个实体。
 	 *
 	 */
 	@Bean
+	@ConfigurationProperties(prefix="spring.redis.pool")
 	public JedisPoolConfig jedisPoolConfig(){
 		JedisPoolConfig config = new JedisPoolConfig();
 		//最大空闲数
-		config.setMaxIdle(10);
+//		config.setMaxIdle(10);
 		//最小空闲数
-		config.setMinIdle(5);
+//		config.setMinIdle(5);
 		//最大链接数
-		config.setMaxTotal(20);
+//		config.setMaxTotal(20);
+		
+		System.out.println("默认值："+config.getMaxIdle());
+		System.out.println("默认值："+config.getMinIdle());
+		System.out.println("默认值："+config.getMaxTotal());
 		
 		return config;
 	}
@@ -37,15 +44,21 @@ public class RedisConfig {
 	 * 2.创建JedisConnectionFactory：配置redis链接信息
 	 */
 	@Bean
+	@ConfigurationProperties(prefix="spring.redis")
 	public JedisConnectionFactory jedisConnectionFactory(JedisPoolConfig config){
+		
+		System.out.println("配置完毕："+config.getMaxIdle());
+		System.out.println("配置完毕："+config.getMinIdle());
+		System.out.println("配置完毕："+config.getMaxTotal());
+		
 		JedisConnectionFactory factory = new JedisConnectionFactory();
 		//关联链接池的配置对象
 		factory.setPoolConfig(config);
 		//配置链接Redis的信息
 		//主机地址
-		factory.setHostName("127.0.0.1");
+//		factory.setHostName("127.0.0.1");
 		//端口
-		factory.setPort(6379);
+//		factory.setPort(6379);
 		
 		return factory;
 	}
