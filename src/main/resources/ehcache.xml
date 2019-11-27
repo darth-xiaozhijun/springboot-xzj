@@ -14,7 +14,7 @@
         <persistence strategy="localTempSwap"/>
     </defaultCache>
     <!-- 自定义缓存策略 -->
-    <cache name="users"
+    <cache name="peoples"
             maxElementsInMemory="10000"
             eternal="false"
             timeToIdleSeconds="120"
