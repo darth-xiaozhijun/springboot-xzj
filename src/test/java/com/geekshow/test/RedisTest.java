@@ -5,6 +5,7 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer;
 import org.springframework.data.redis.serializer.JdkSerializationRedisSerializer;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
@@ -45,7 +46,7 @@ public class RedisTest {
 	 * 添加Users对象
 	 */
 	@Test
-	public void testSetUesrs(){
+	public void testSetPeoples(){
 		
 		Peoples peoples = new Peoples();
 		peoples.setAge(20);
@@ -60,10 +61,35 @@ public class RedisTest {
 	 * 取Users对象
 	 */
 	@Test
-	public void testGetUsers(){
+	public void testGetPeoples(){
+		
 		//重新设置序列化器
 		this.redisTemplate.setValueSerializer(new JdkSerializationRedisSerializer());
 		Peoples peoples = (Peoples)this.redisTemplate.opsForValue().get("peoples");
+		System.out.println(peoples);
+	}
+	
+	/**
+	 * 基于JSON格式存Users对象
+	 */
+	@Test
+	public void testSetPeoplesUseJSON(){
+		
+		Peoples peoples = new Peoples();
+		peoples.setAge(20);
+		peoples.setName("爱新觉罗玄烨");
+		peoples.setId(1);
+		this.redisTemplate.setValueSerializer(new Jackson2JsonRedisSerializer<>(Peoples.class));
+		this.redisTemplate.opsForValue().set("peoples_json", peoples);
+	}
+	
+	/**
+	 * 基于JSON格式取Users对象
+	 */
+	@Test
+	public void testGetPeoplesJSON(){
+		this.redisTemplate.setValueSerializer(new Jackson2JsonRedisSerializer<>(Peoples.class));
+		Peoples peoples = (Peoples)this.redisTemplate.opsForValue().get("peoples_json");
 		System.out.println(peoples);
 	}
 }
