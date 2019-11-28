@@ -14,4 +14,5 @@ public class ValueController {
 	public String showMsg(){
 		return this.msg;
 	}
+	
 }
