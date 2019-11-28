@@ -105,3 +105,409 @@
 2019-11-28 16:39:43.712 [http-nio-9810-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
 2019-11-28 16:39:43.713 [http-nio-9810-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
 2019-11-28 16:39:43.741 [http-nio-9810-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+2019-11-28 16:48:13.467 [restartedMain] INFO  com.geekshow.Application - Starting Application on DESKTOP-SOIFVIK with PID 408924 (C:\xiaozhijun\springboot-xzj\target\classes started by xiaozhijun in C:\xiaozhijun\springboot-xzj)
+2019-11-28 16:48:13.472 [restartedMain] INFO  com.geekshow.Application - No active profile set, falling back to default profiles: default
+2019-11-28 16:48:13.750 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d2dc927: startup date [Thu Nov 28 16:48:13 CST 2019]; root of context hierarchy
+2019-11-28 16:48:13.773 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2019-11-28 16:48:14.859 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-28 16:48:14.955 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-28 16:48:14.995 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.geekshow.dao.PeoplesRepositorySpecification.
+2019-11-28 16:48:14.996 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.geekshow.dao.PeopleRepository.
+2019-11-28 16:48:14.997 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.geekshow.dao.PeoplesRepositoryByName.
+2019-11-28 16:48:14.997 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.geekshow.dao.PeoplesRepositoryCrudRepository.
+2019-11-28 16:48:14.997 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.geekshow.dao.PeoplesRepositoryQueryAnnotation.
+2019-11-28 16:48:14.998 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.geekshow.dao.PeoplesRepository.
+2019-11-28 16:48:14.999 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.geekshow.dao.PeoplesRepositoryPagingAndSorting.
+2019-11-28 16:48:14.999 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.geekshow.dao.PartsRepository.
+2019-11-28 16:48:15.630 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c27373f5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-28 16:48:16.217 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2019-11-28 16:48:16.231 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-11-28 16:48:16.232 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.27
+2019-11-28 16:48:16.509 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-11-28 16:48:16.513 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-11-28 16:48:16.513 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2763 ms
+2019-11-28 16:48:16.723 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2019-11-28 16:48:16.724 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'FirstServlet' to [/first]
+2019-11-28 16:48:16.728 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-11-28 16:48:16.729 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-11-28 16:48:16.729 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-11-28 16:48:16.729 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-11-28 16:48:16.729 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'FirstFilter' to urls: [/first]
+2019-11-28 16:48:16.783 [restartedMain] WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'inMemoryDatabaseShutdownExecutor' defined in class path resource [org/springframework/boot/devtools/autoconfigure/DevToolsDataSourceAutoConfiguration.class]: Unsatisfied dependency expressed through method 'inMemoryDatabaseShutdownExecutor' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+2019-11-28 16:48:16.785 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2019-11-28 16:48:16.883 [restartedMain] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2019-11-28 16:48:16.890 [restartedMain] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Cannot determine embedded database driver class for database type NONE
+
+Action:
+
+If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+
+2019-11-28 16:49:27.126 [restartedMain] INFO  com.geekshow.Application - Starting Application on DESKTOP-SOIFVIK with PID 423532 (C:\xiaozhijun\springboot-xzj\target\classes started by xiaozhijun in C:\xiaozhijun\springboot-xzj)
+2019-11-28 16:49:27.130 [restartedMain] INFO  com.geekshow.Application - No active profile set, falling back to default profiles: default
+2019-11-28 16:49:27.418 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@575731f9: startup date [Thu Nov 28 16:49:27 CST 2019]; root of context hierarchy
+2019-11-28 16:49:27.435 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2019-11-28 16:49:28.485 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-28 16:49:28.573 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-28 16:49:28.612 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.geekshow.dao.PeoplesRepositorySpecification.
+2019-11-28 16:49:28.613 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.geekshow.dao.PeopleRepository.
+2019-11-28 16:49:28.614 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.geekshow.dao.PeoplesRepositoryByName.
+2019-11-28 16:49:28.615 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.geekshow.dao.PeoplesRepositoryCrudRepository.
+2019-11-28 16:49:28.615 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.geekshow.dao.PeoplesRepositoryQueryAnnotation.
+2019-11-28 16:49:28.615 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.geekshow.dao.PeoplesRepository.
+2019-11-28 16:49:28.617 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.geekshow.dao.PeoplesRepositoryPagingAndSorting.
+2019-11-28 16:49:28.618 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.geekshow.dao.PartsRepository.
+2019-11-28 16:49:29.266 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c5a0f19f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-28 16:49:29.836 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 3279 (http)
+2019-11-28 16:49:29.852 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-11-28 16:49:29.853 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.27
+2019-11-28 16:49:30.153 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-11-28 16:49:30.157 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-11-28 16:49:30.157 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2739 ms
+2019-11-28 16:49:30.373 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2019-11-28 16:49:30.375 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'FirstServlet' to [/first]
+2019-11-28 16:49:30.378 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-11-28 16:49:30.380 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-11-28 16:49:30.380 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-11-28 16:49:30.380 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-11-28 16:49:30.380 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'FirstFilter' to urls: [/first]
+2019-11-28 16:49:30.699 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-11-28 16:49:31.116 [restartedMain] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-11-28 16:49:31.133 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-11-28 16:49:31.201 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2019-11-28 16:49:31.203 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-11-28 16:49:31.204 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2019-11-28 16:49:31.271 [restartedMain] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-11-28 16:49:31.437 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-11-28 16:49:31.999 [restartedMain] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+2019-11-28 16:49:32.737 [restartedMain] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-28 16:49:33.275 [restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2019-11-28 16:49:33.308 [restartedMain] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-11-28 16:49:33.311 [restartedMain] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+2019-11-28 16:49:33.313 [restartedMain] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2019-11-28 16:49:33.315 [restartedMain] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'schedulerFactoryBean' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-11-28 16:49:33.315 [restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'schedulerFactoryBean' initialized from an externally provided properties instance.
+2019-11-28 16:49:33.315 [restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+2019-11-28 16:49:33.316 [restartedMain] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: com.geekshow.config.MyAdaptableJobFactory@7649f146
+2019-11-28 16:49:33.917 [restartedMain] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2019-11-28 16:49:34.003 [restartedMain] WARN  org.hibernate.hql.internal.ast.HqlSqlWalker - [DEPRECATION] Encountered positional parameter near line 1, column 46 in HQL: [update com.geekshow.pojo.Peoples set name  = ? where id  = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+2019-11-28 16:49:34.005 [restartedMain] WARN  org.hibernate.hql.internal.ast.HqlSqlWalker - [DEPRECATION] Encountered positional parameter near line 1, column 60 in HQL: [update com.geekshow.pojo.Peoples set name  = ? where id  = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+2019-11-28 16:49:34.024 [restartedMain] WARN  org.hibernate.hql.internal.ast.HqlSqlWalker - [DEPRECATION] Encountered positional parameter near line 1, column 45 in HQL: [from com.geekshow.pojo.Peoples where name = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+2019-11-28 16:49:34.203 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@575731f9: startup date [Thu Nov 28 16:49:27 CST 2019]; root of context hierarchy
+2019-11-28 16:49:34.298 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/show3]}" onto public java.lang.String com.geekshow.controller.DemoController.showInfo3(org.springframework.ui.Model)
+2019-11-28 16:49:34.299 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/show4]}" onto public java.lang.String com.geekshow.controller.DemoController.showInfo4(org.springframework.ui.Model)
+2019-11-28 16:49:34.299 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/show5]}" onto public java.lang.String com.geekshow.controller.DemoController.showInfo5(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2019-11-28 16:49:34.299 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/show2]}" onto public java.lang.String com.geekshow.controller.DemoController.showInfo2(org.springframework.ui.Model)
+2019-11-28 16:49:34.299 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/show]}" onto public java.lang.String com.geekshow.controller.DemoController.showInfo(org.springframework.ui.Model)
+2019-11-28 16:49:34.300 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/{page}]}" onto public java.lang.String com.geekshow.controller.DemoController.showInfo(java.lang.String,java.lang.Integer,java.lang.String)
+2019-11-28 16:49:34.301 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/exception/show2]}" onto public java.lang.String com.geekshow.controller.ExceptionController.showInfo2()
+2019-11-28 16:49:34.301 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/exception/show]}" onto public java.lang.String com.geekshow.controller.ExceptionController.showInfo()
+2019-11-28 16:49:34.302 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/fileUploadController]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.geekshow.controller.FileUploadController.fileUpload(org.springframework.web.multipart.MultipartFile) throws java.lang.Exception
+2019-11-28 16:49:34.302 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.geekshow.controller.HelloWorldController.showHelloWorld()
+2019-11-28 16:49:34.304 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/showUser2]}" onto public java.lang.String com.geekshow.controller.UserController.showUser2()
+2019-11-28 16:49:34.304 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/loader]}" onto public java.lang.String com.geekshow.controller.UserController.showPage()
+2019-11-28 16:49:34.305 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/addUser]}" onto public java.lang.String com.geekshow.controller.UserController.showPage(com.geekshow.pojo.User)
+2019-11-28 16:49:34.305 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/save]}" onto public java.lang.String com.geekshow.controller.UserController.saveUser(com.geekshow.pojo.User,org.springframework.validation.BindingResult)
+2019-11-28 16:49:34.306 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/showUser1]}" onto public java.lang.String com.geekshow.controller.UserController.showUser()
+2019-11-28 16:49:34.306 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/showUser]}" onto public java.lang.String com.geekshow.controller.UserController.showUser(org.springframework.ui.Model)
+2019-11-28 16:49:34.307 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users/addUser]}" onto public java.lang.String com.geekshow.controller.UsersController.addUser(com.geekshow.pojo.Users)
+2019-11-28 16:49:34.308 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users/{page}]}" onto public java.lang.String com.geekshow.controller.UsersController.showPage(java.lang.String)
+2019-11-28 16:49:34.308 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users/findUserAll]}" onto public java.lang.String com.geekshow.controller.UsersController.findUserAll(org.springframework.ui.Model)
+2019-11-28 16:49:34.308 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users/editUser]}" onto public java.lang.String com.geekshow.controller.UsersController.editUser(com.geekshow.pojo.Users)
+2019-11-28 16:49:34.308 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users/delUser]}" onto public java.lang.String com.geekshow.controller.UsersController.delUser(java.lang.Integer)
+2019-11-28 16:49:34.308 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users/findUserById]}" onto public java.lang.String com.geekshow.controller.UsersController.findUserById(java.lang.Integer,org.springframework.ui.Model)
+2019-11-28 16:49:34.309 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/value]}" onto public java.lang.String com.geekshow.controller.ValueController.showMsg()
+2019-11-28 16:49:34.310 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-28 16:49:34.310 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-28 16:49:34.356 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-28 16:49:34.357 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-28 16:49:34.381 [restartedMain] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalException
+2019-11-28 16:49:34.419 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-28 16:49:34.638 [restartedMain] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-11-28 16:49:35.004 [restartedMain] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: ServletContext resource [/index.html]
+2019-11-28 16:49:35.570 [restartedMain] INFO  o.s.w.servlet.view.freemarker.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-11-28 16:49:35.813 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-11-28 16:49:36.027 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-11-28 16:49:36.029 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-11-28 16:49:36.036 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-11-28 16:49:36.040 [restartedMain] INFO  o.s.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2019-11-28 16:49:36.041 [restartedMain] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2019-11-28 16:49:36.041 [restartedMain] INFO  org.quartz.core.QuartzScheduler - Scheduler schedulerFactoryBean_$_NON_CLUSTERED started.
+2019-11-28 16:49:36.060 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-3279"]
+2019-11-28 16:49:36.071 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-3279"]
+2019-11-28 16:49:36.109 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-11-28 16:49:36.147 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 3279 (http)
+2019-11-28 16:49:36.151 [restartedMain] INFO  com.geekshow.Application - Started Application in 9.361 seconds (JVM running for 10.122)
+2019-11-28 16:50:11.511 [restartedMain] INFO  com.geekshow.Application - Starting Application on DESKTOP-SOIFVIK with PID 416916 (C:\xiaozhijun\springboot-xzj\target\classes started by xiaozhijun in C:\xiaozhijun\springboot-xzj)
+2019-11-28 16:50:11.515 [restartedMain] INFO  com.geekshow.Application - No active profile set, falling back to default profiles: default
+2019-11-28 16:50:11.806 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5e2cadc6: startup date [Thu Nov 28 16:50:11 CST 2019]; root of context hierarchy
+2019-11-28 16:50:11.823 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2019-11-28 16:50:12.876 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-28 16:50:12.968 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-28 16:50:13.008 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.geekshow.dao.PeoplesRepositorySpecification.
+2019-11-28 16:50:13.008 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.geekshow.dao.PeopleRepository.
+2019-11-28 16:50:13.009 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.geekshow.dao.PeoplesRepositoryByName.
+2019-11-28 16:50:13.010 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.geekshow.dao.PeoplesRepositoryCrudRepository.
+2019-11-28 16:50:13.010 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.geekshow.dao.PeoplesRepositoryQueryAnnotation.
+2019-11-28 16:50:13.010 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.geekshow.dao.PeoplesRepository.
+2019-11-28 16:50:13.011 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.geekshow.dao.PeoplesRepositoryPagingAndSorting.
+2019-11-28 16:50:13.012 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.geekshow.dao.PartsRepository.
+2019-11-28 16:50:13.587 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$61f2edf0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-28 16:50:14.167 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 7026 (http)
+2019-11-28 16:50:14.183 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-11-28 16:50:14.184 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.27
+2019-11-28 16:50:14.489 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-11-28 16:50:14.494 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-11-28 16:50:14.494 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2688 ms
+2019-11-28 16:50:14.711 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2019-11-28 16:50:14.713 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'FirstServlet' to [/first]
+2019-11-28 16:50:14.716 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-11-28 16:50:14.717 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-11-28 16:50:14.718 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-11-28 16:50:14.718 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-11-28 16:50:14.718 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'FirstFilter' to urls: [/first]
+2019-11-28 16:50:15.042 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-11-28 16:50:15.354 [restartedMain] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-11-28 16:50:15.371 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-11-28 16:50:15.455 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2019-11-28 16:50:15.458 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-11-28 16:50:15.459 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2019-11-28 16:50:15.515 [restartedMain] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-11-28 16:50:15.688 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-11-28 16:50:16.346 [restartedMain] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+2019-11-28 16:50:16.796 [restartedMain] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-28 16:50:17.294 [restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2019-11-28 16:50:17.314 [restartedMain] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-11-28 16:50:17.315 [restartedMain] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+2019-11-28 16:50:17.317 [restartedMain] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2019-11-28 16:50:17.319 [restartedMain] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'schedulerFactoryBean' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-11-28 16:50:17.319 [restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'schedulerFactoryBean' initialized from an externally provided properties instance.
+2019-11-28 16:50:17.319 [restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+2019-11-28 16:50:17.320 [restartedMain] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: com.geekshow.config.MyAdaptableJobFactory@1ad295ce
+2019-11-28 16:50:17.899 [restartedMain] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2019-11-28 16:50:17.981 [restartedMain] WARN  org.hibernate.hql.internal.ast.HqlSqlWalker - [DEPRECATION] Encountered positional parameter near line 1, column 46 in HQL: [update com.geekshow.pojo.Peoples set name  = ? where id  = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+2019-11-28 16:50:17.983 [restartedMain] WARN  org.hibernate.hql.internal.ast.HqlSqlWalker - [DEPRECATION] Encountered positional parameter near line 1, column 60 in HQL: [update com.geekshow.pojo.Peoples set name  = ? where id  = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+2019-11-28 16:50:18.005 [restartedMain] WARN  org.hibernate.hql.internal.ast.HqlSqlWalker - [DEPRECATION] Encountered positional parameter near line 1, column 45 in HQL: [from com.geekshow.pojo.Peoples where name = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+2019-11-28 16:50:18.145 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5e2cadc6: startup date [Thu Nov 28 16:50:11 CST 2019]; root of context hierarchy
+2019-11-28 16:50:18.244 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/show5]}" onto public java.lang.String com.geekshow.controller.DemoController.showInfo5(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2019-11-28 16:50:18.245 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/{page}]}" onto public java.lang.String com.geekshow.controller.DemoController.showInfo(java.lang.String,java.lang.Integer,java.lang.String)
+2019-11-28 16:50:18.245 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/show]}" onto public java.lang.String com.geekshow.controller.DemoController.showInfo(org.springframework.ui.Model)
+2019-11-28 16:50:18.245 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/show2]}" onto public java.lang.String com.geekshow.controller.DemoController.showInfo2(org.springframework.ui.Model)
+2019-11-28 16:50:18.245 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/show3]}" onto public java.lang.String com.geekshow.controller.DemoController.showInfo3(org.springframework.ui.Model)
+2019-11-28 16:50:18.246 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/show4]}" onto public java.lang.String com.geekshow.controller.DemoController.showInfo4(org.springframework.ui.Model)
+2019-11-28 16:50:18.248 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/exception/show]}" onto public java.lang.String com.geekshow.controller.ExceptionController.showInfo()
+2019-11-28 16:50:18.248 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/exception/show2]}" onto public java.lang.String com.geekshow.controller.ExceptionController.showInfo2()
+2019-11-28 16:50:18.248 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/fileUploadController]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.geekshow.controller.FileUploadController.fileUpload(org.springframework.web.multipart.MultipartFile) throws java.lang.Exception
+2019-11-28 16:50:18.249 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.geekshow.controller.HelloWorldController.showHelloWorld()
+2019-11-28 16:50:18.251 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/showUser2]}" onto public java.lang.String com.geekshow.controller.UserController.showUser2()
+2019-11-28 16:50:18.251 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/showUser]}" onto public java.lang.String com.geekshow.controller.UserController.showUser(org.springframework.ui.Model)
+2019-11-28 16:50:18.251 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/showUser1]}" onto public java.lang.String com.geekshow.controller.UserController.showUser()
+2019-11-28 16:50:18.252 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/save]}" onto public java.lang.String com.geekshow.controller.UserController.saveUser(com.geekshow.pojo.User,org.springframework.validation.BindingResult)
+2019-11-28 16:50:18.252 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/addUser]}" onto public java.lang.String com.geekshow.controller.UserController.showPage(com.geekshow.pojo.User)
+2019-11-28 16:50:18.252 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/loader]}" onto public java.lang.String com.geekshow.controller.UserController.showPage()
+2019-11-28 16:50:18.254 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users/addUser]}" onto public java.lang.String com.geekshow.controller.UsersController.addUser(com.geekshow.pojo.Users)
+2019-11-28 16:50:18.255 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users/findUserAll]}" onto public java.lang.String com.geekshow.controller.UsersController.findUserAll(org.springframework.ui.Model)
+2019-11-28 16:50:18.255 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users/findUserById]}" onto public java.lang.String com.geekshow.controller.UsersController.findUserById(java.lang.Integer,org.springframework.ui.Model)
+2019-11-28 16:50:18.255 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users/delUser]}" onto public java.lang.String com.geekshow.controller.UsersController.delUser(java.lang.Integer)
+2019-11-28 16:50:18.255 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users/editUser]}" onto public java.lang.String com.geekshow.controller.UsersController.editUser(com.geekshow.pojo.Users)
+2019-11-28 16:50:18.255 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users/{page}]}" onto public java.lang.String com.geekshow.controller.UsersController.showPage(java.lang.String)
+2019-11-28 16:50:18.255 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/value]}" onto public java.lang.String com.geekshow.controller.ValueController.showMsg()
+2019-11-28 16:50:18.257 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-28 16:50:18.258 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-28 16:50:18.308 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-28 16:50:18.309 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-28 16:50:18.334 [restartedMain] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalException
+2019-11-28 16:50:18.375 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-28 16:50:18.497 [restartedMain] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-11-28 16:50:18.835 [restartedMain] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: ServletContext resource [/index.html]
+2019-11-28 16:50:19.212 [restartedMain] INFO  o.s.w.servlet.view.freemarker.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-11-28 16:50:19.612 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-11-28 16:50:19.914 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-11-28 16:50:19.916 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-11-28 16:50:19.921 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-11-28 16:50:19.925 [restartedMain] INFO  o.s.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2019-11-28 16:50:19.926 [restartedMain] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2019-11-28 16:50:19.926 [restartedMain] INFO  org.quartz.core.QuartzScheduler - Scheduler schedulerFactoryBean_$_NON_CLUSTERED started.
+2019-11-28 16:50:19.947 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7026"]
+2019-11-28 16:50:19.958 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7026"]
+2019-11-28 16:50:19.973 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-11-28 16:50:20.015 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 7026 (http)
+2019-11-28 16:50:20.022 [restartedMain] INFO  com.geekshow.Application - Started Application in 8.764 seconds (JVM running for 9.503)
+2019-11-28 16:58:24.395 [restartedMain] INFO  com.geekshow.Application - Starting Application on DESKTOP-SOIFVIK with PID 417260 (C:\xiaozhijun\springboot-xzj\target\classes started by xiaozhijun in C:\xiaozhijun\springboot-xzj)
+2019-11-28 16:58:24.423 [restartedMain] INFO  com.geekshow.Application - No active profile set, falling back to default profiles: default
+2019-11-28 16:58:24.729 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2019-11-28 16:58:24.748 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1d2dc927: startup date [Thu Nov 28 16:58:24 CST 2019]; root of context hierarchy
+2019-11-28 16:58:25.814 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-28 16:58:25.908 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-28 16:58:25.948 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.geekshow.dao.PeoplesRepositorySpecification.
+2019-11-28 16:58:25.949 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.geekshow.dao.PeopleRepository.
+2019-11-28 16:58:25.950 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.geekshow.dao.PeoplesRepositoryByName.
+2019-11-28 16:58:25.950 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.geekshow.dao.PeoplesRepositoryCrudRepository.
+2019-11-28 16:58:25.951 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.geekshow.dao.PeoplesRepositoryQueryAnnotation.
+2019-11-28 16:58:25.951 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.geekshow.dao.PeoplesRepository.
+2019-11-28 16:58:25.952 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.geekshow.dao.PeoplesRepositoryPagingAndSorting.
+2019-11-28 16:58:25.953 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.geekshow.dao.PartsRepository.
+2019-11-28 16:58:26.579 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6e4e2792] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-28 16:58:27.155 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 8080 (http)
+2019-11-28 16:58:27.171 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-11-28 16:58:27.172 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.27
+2019-11-28 16:58:27.595 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-11-28 16:58:27.600 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-11-28 16:58:27.600 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2852 ms
+2019-11-28 16:58:27.822 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2019-11-28 16:58:27.824 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'FirstServlet' to [/first]
+2019-11-28 16:58:27.827 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-11-28 16:58:27.828 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-11-28 16:58:27.828 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-11-28 16:58:27.828 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-11-28 16:58:27.829 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'FirstFilter' to urls: [/first]
+2019-11-28 16:58:27.891 [restartedMain] WARN  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'inMemoryDatabaseShutdownExecutor' defined in class path resource [org/springframework/boot/devtools/autoconfigure/DevToolsDataSourceAutoConfiguration.class]: Unsatisfied dependency expressed through method 'inMemoryDatabaseShutdownExecutor' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Tomcat.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.tomcat.jdbc.pool.DataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Cannot determine embedded database driver class for database type NONE. If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+2019-11-28 16:58:27.894 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2019-11-28 16:58:27.989 [restartedMain] INFO  o.s.b.a.l.AutoConfigurationReportLoggingInitializer - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2019-11-28 16:58:27.995 [restartedMain] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Cannot determine embedded database driver class for database type NONE
+
+Action:
+
+If you want an embedded database please put a supported one on the classpath. If you have database settings to be loaded from a particular profile you may need to active it (no profiles are currently active).
+
+2019-11-28 16:59:16.106 [restartedMain] INFO  com.geekshow.Application - Starting Application on DESKTOP-SOIFVIK with PID 424792 (C:\xiaozhijun\springboot-xzj\target\classes started by xiaozhijun in C:\xiaozhijun\springboot-xzj)
+2019-11-28 16:59:16.110 [restartedMain] INFO  com.geekshow.Application - The following profiles are active: dev
+2019-11-28 16:59:16.457 [restartedMain] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@538bbe1f: startup date [Thu Nov 28 16:59:16 CST 2019]; root of context hierarchy
+2019-11-28 16:59:16.457 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 5.3.6.Final
+2019-11-28 16:59:17.566 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-28 16:59:17.661 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-11-28 16:59:17.702 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.geekshow.dao.PeoplesRepositorySpecification.
+2019-11-28 16:59:17.703 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.geekshow.dao.PeopleRepository.
+2019-11-28 16:59:17.704 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.geekshow.dao.PeoplesRepositoryByName.
+2019-11-28 16:59:17.704 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.geekshow.dao.PeoplesRepositoryCrudRepository.
+2019-11-28 16:59:17.704 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.geekshow.dao.PeoplesRepositoryQueryAnnotation.
+2019-11-28 16:59:17.705 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.geekshow.dao.PeoplesRepository.
+2019-11-28 16:59:17.706 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.geekshow.dao.PeoplesRepositoryPagingAndSorting.
+2019-11-28 16:59:17.706 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.geekshow.dao.PartsRepository.
+2019-11-28 16:59:18.465 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$28a4b6fe] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-11-28 16:59:19.025 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat initialized with port(s): 7777 (http)
+2019-11-28 16:59:19.173 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-11-28 16:59:19.174 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.27
+2019-11-28 16:59:19.454 [localhost-startStop-1] INFO  org.apache.jasper.servlet.TldScanner - At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-11-28 16:59:19.459 [localhost-startStop-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-11-28 16:59:19.459 [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3002 ms
+2019-11-28 16:59:19.688 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'dispatcherServlet' to [/]
+2019-11-28 16:59:19.690 [localhost-startStop-1] INFO  o.s.boot.web.servlet.ServletRegistrationBean - Mapping servlet: 'FirstServlet' to [/first]
+2019-11-28 16:59:19.694 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-11-28 16:59:19.695 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-11-28 16:59:19.695 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-11-28 16:59:19.695 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-11-28 16:59:19.695 [localhost-startStop-1] INFO  o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'FirstFilter' to urls: [/first]
+2019-11-28 16:59:20.082 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2019-11-28 16:59:20.365 [restartedMain] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-11-28 16:59:20.379 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-11-28 16:59:20.446 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.0.12.Final}
+2019-11-28 16:59:20.448 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2019-11-28 16:59:20.449 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+2019-11-28 16:59:20.492 [restartedMain] INFO  org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-11-28 16:59:20.612 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-11-28 16:59:21.102 [restartedMain] INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update
+2019-11-28 16:59:21.613 [restartedMain] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-11-28 16:59:22.205 [restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Using default implementation for ThreadExecutor
+2019-11-28 16:59:22.220 [restartedMain] INFO  org.quartz.core.SchedulerSignalerImpl - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2019-11-28 16:59:22.221 [restartedMain] INFO  org.quartz.core.QuartzScheduler - Quartz Scheduler v.2.2.1 created.
+2019-11-28 16:59:22.222 [restartedMain] INFO  org.quartz.simpl.RAMJobStore - RAMJobStore initialized.
+2019-11-28 16:59:22.224 [restartedMain] INFO  org.quartz.core.QuartzScheduler - Scheduler meta-data: Quartz Scheduler (v2.2.1) 'schedulerFactoryBean' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2019-11-28 16:59:22.224 [restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler 'schedulerFactoryBean' initialized from an externally provided properties instance.
+2019-11-28 16:59:22.224 [restartedMain] INFO  org.quartz.impl.StdSchedulerFactory - Quartz scheduler version: 2.2.1
+2019-11-28 16:59:22.225 [restartedMain] INFO  org.quartz.core.QuartzScheduler - JobFactory set to: com.geekshow.config.MyAdaptableJobFactory@5e5eccea
+2019-11-28 16:59:22.908 [restartedMain] INFO  o.h.hql.internal.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+2019-11-28 16:59:22.998 [restartedMain] WARN  org.hibernate.hql.internal.ast.HqlSqlWalker - [DEPRECATION] Encountered positional parameter near line 1, column 46 in HQL: [update com.geekshow.pojo.Peoples set name  = ? where id  = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+2019-11-28 16:59:23.001 [restartedMain] WARN  org.hibernate.hql.internal.ast.HqlSqlWalker - [DEPRECATION] Encountered positional parameter near line 1, column 60 in HQL: [update com.geekshow.pojo.Peoples set name  = ? where id  = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+2019-11-28 16:59:23.016 [restartedMain] WARN  org.hibernate.hql.internal.ast.HqlSqlWalker - [DEPRECATION] Encountered positional parameter near line 1, column 45 in HQL: [from com.geekshow.pojo.Peoples where name = ?].  Positional parameter are considered deprecated; use named parameters or JPA-style positional parameters instead.
+2019-11-28 16:59:23.095 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@538bbe1f: startup date [Thu Nov 28 16:59:16 CST 2019]; root of context hierarchy
+2019-11-28 16:59:23.205 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/show3]}" onto public java.lang.String com.geekshow.controller.DemoController.showInfo3(org.springframework.ui.Model)
+2019-11-28 16:59:23.206 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/show4]}" onto public java.lang.String com.geekshow.controller.DemoController.showInfo4(org.springframework.ui.Model)
+2019-11-28 16:59:23.206 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/show5]}" onto public java.lang.String com.geekshow.controller.DemoController.showInfo5(javax.servlet.http.HttpServletRequest,org.springframework.ui.Model)
+2019-11-28 16:59:23.206 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/show2]}" onto public java.lang.String com.geekshow.controller.DemoController.showInfo2(org.springframework.ui.Model)
+2019-11-28 16:59:23.206 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/show]}" onto public java.lang.String com.geekshow.controller.DemoController.showInfo(org.springframework.ui.Model)
+2019-11-28 16:59:23.207 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/{page}]}" onto public java.lang.String com.geekshow.controller.DemoController.showInfo(java.lang.String,java.lang.Integer,java.lang.String)
+2019-11-28 16:59:23.209 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/exception/show2]}" onto public java.lang.String com.geekshow.controller.ExceptionController.showInfo2()
+2019-11-28 16:59:23.209 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/exception/show]}" onto public java.lang.String com.geekshow.controller.ExceptionController.showInfo()
+2019-11-28 16:59:23.210 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/fileUploadController]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.geekshow.controller.FileUploadController.fileUpload(org.springframework.web.multipart.MultipartFile) throws java.lang.Exception
+2019-11-28 16:59:23.210 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/hello]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.geekshow.controller.HelloWorldController.showHelloWorld()
+2019-11-28 16:59:23.213 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/save]}" onto public java.lang.String com.geekshow.controller.UserController.saveUser(com.geekshow.pojo.User,org.springframework.validation.BindingResult)
+2019-11-28 16:59:23.214 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/loader]}" onto public java.lang.String com.geekshow.controller.UserController.showPage()
+2019-11-28 16:59:23.215 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/addUser]}" onto public java.lang.String com.geekshow.controller.UserController.showPage(com.geekshow.pojo.User)
+2019-11-28 16:59:23.216 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/showUser2]}" onto public java.lang.String com.geekshow.controller.UserController.showUser2()
+2019-11-28 16:59:23.216 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/showUser1]}" onto public java.lang.String com.geekshow.controller.UserController.showUser()
+2019-11-28 16:59:23.217 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/showUser]}" onto public java.lang.String com.geekshow.controller.UserController.showUser(org.springframework.ui.Model)
+2019-11-28 16:59:23.218 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users/addUser]}" onto public java.lang.String com.geekshow.controller.UsersController.addUser(com.geekshow.pojo.Users)
+2019-11-28 16:59:23.218 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users/delUser]}" onto public java.lang.String com.geekshow.controller.UsersController.delUser(java.lang.Integer)
+2019-11-28 16:59:23.219 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users/editUser]}" onto public java.lang.String com.geekshow.controller.UsersController.editUser(com.geekshow.pojo.Users)
+2019-11-28 16:59:23.219 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users/{page}]}" onto public java.lang.String com.geekshow.controller.UsersController.showPage(java.lang.String)
+2019-11-28 16:59:23.219 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users/findUserAll]}" onto public java.lang.String com.geekshow.controller.UsersController.findUserAll(org.springframework.ui.Model)
+2019-11-28 16:59:23.219 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/users/findUserById]}" onto public java.lang.String com.geekshow.controller.UsersController.findUserById(java.lang.Integer,org.springframework.ui.Model)
+2019-11-28 16:59:23.219 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/value]}" onto public java.lang.String com.geekshow.controller.ValueController.showMsg()
+2019-11-28 16:59:23.221 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-11-28 16:59:23.221 [restartedMain] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-11-28 16:59:23.278 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-28 16:59:23.278 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-28 16:59:23.305 [restartedMain] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Detected @ExceptionHandler methods in globalException
+2019-11-28 16:59:23.344 [restartedMain] INFO  o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-11-28 16:59:23.509 [restartedMain] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-11-28 16:59:23.939 [restartedMain] INFO  o.s.b.a.w.WebMvcAutoConfiguration$WelcomePageHandlerMapping - Adding welcome page: ServletContext resource [/index.html]
+2019-11-28 16:59:24.775 [restartedMain] INFO  o.s.w.servlet.view.freemarker.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-11-28 16:59:25.257 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2019-11-28 16:59:25.467 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-11-28 16:59:25.469 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2019-11-28 16:59:25.475 [restartedMain] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=dataSource,type=DruidDataSource]
+2019-11-28 16:59:25.493 [restartedMain] INFO  o.s.context.support.DefaultLifecycleProcessor - Starting beans in phase 2147483647
+2019-11-28 16:59:25.494 [restartedMain] INFO  o.s.scheduling.quartz.SchedulerFactoryBean - Starting Quartz Scheduler now
+2019-11-28 16:59:25.494 [restartedMain] INFO  org.quartz.core.QuartzScheduler - Scheduler schedulerFactoryBean_$_NON_CLUSTERED started.
+2019-11-28 16:59:25.542 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-7777"]
+2019-11-28 16:59:25.563 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-7777"]
+2019-11-28 16:59:25.660 [restartedMain] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2019-11-28 16:59:25.769 [restartedMain] INFO  o.s.b.c.e.tomcat.TomcatEmbeddedServletContainer - Tomcat started on port(s): 7777 (http)
+2019-11-28 16:59:25.774 [restartedMain] INFO  com.geekshow.Application - Started Application in 10.021 seconds (JVM running for 10.768)
